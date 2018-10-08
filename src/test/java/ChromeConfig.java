@@ -21,6 +21,7 @@ public class ChromeConfig {
         System.setProperty("webdriver.chrome.driver", pathForWin);
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 

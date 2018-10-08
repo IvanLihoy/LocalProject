@@ -1,6 +1,4 @@
-import Pages.ActivationUserApi;
-import Pages.LoginCompanyPage;
-import Pages.RegistrationCompanyPage;
+import Pages.*;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -11,30 +9,56 @@ public class TestCasesCompany extends ChromeConfig {
     private LoginCompanyPage loginCompanyPage;
     private RegistrationCompanyPage registrationCompanyPage;
     private ActivationUserApi activationUserApi;
+    private CreateYourCompanyProfilePage createYourCompanyProfilePage;
+    private RequestPage requestPage;
 
     @BeforeClass
     protected void initDBPages() throws IOException {
         loginCompanyPage = new LoginCompanyPage(driver);
         registrationCompanyPage = new RegistrationCompanyPage(driver);
         activationUserApi = new ActivationUserApi(driver);
+        createYourCompanyProfilePage = new CreateYourCompanyProfilePage(driver);
+        requestPage = new RequestPage(driver);
     }
 
-    @Test(priority = 6)
+//    @Test(priority = 1)
+//    public void positiveRegistrationCompanyTest() {
+//        registrationCompanyPage.openRegistrationCompanyPage();
+//        registrationCompanyPage.inputRegistrationDataCompany();
+//    }
+//
+//    @Test(priority = 2, dependsOnMethods = "positiveRegistrationCompanyTest")
+//    public void activateCompanyTest() throws Exception {
+//        activationUserApi.openActivationLink();
+//        activationUserApi.deleteActivationMessage();
+//    }
+
+    @Test(priority = 1)//, dependsOnMethods = "activateCompanyTest")
     public void positiveLoginCompanyTest() {
         loginCompanyPage.openLoginPage();
         loginCompanyPage.loginCompany();
+    }
+
+    @Test(priority = 2)//, dependsOnMethods = "activateCompanyTest")
+    public void fillInCompanyProfileTest() {
+        createYourCompanyProfilePage.fillInCompanyProfile();
+    }
+
+    @Test(priority = 3)
+    public void createRequestByCompanyWithPriceTest() {
+        requestPage.createRequestFirstStep();
+        requestPage.createRequestSecondStep();
+        requestPage.createRequestThirdStep();
+        requestPage.createRequestFourthStepWithPrice();
+    }
+
+    @Test(priority = 4)
+    public void createRequestByCompanyNoPriceTest() {
+        requestPage.createRequestFirstStep();
+        requestPage.createRequestSecondStep();
+        requestPage.createRequestThirdStep();
+        requestPage.createRequestFourthStepNoPrice();
         loginCompanyPage.verifyLogin();
     }
 
-    @Test(priority = 7, dependsOnMethods = "positiveLoginCompanyTest")
-    public void positiveRegistrationCompanyTest() {
-        registrationCompanyPage.openRegistrationCompanyPage();
-        registrationCompanyPage.inputRegistrationDataCompany();
-    }
-
-    @Test(priority = 8, dependsOnMethods = "positiveRegistrationCompanyTest")
-    public void activateCompanyTest() throws Exception {
-        activationUserApi.openActivationLink();
-        activationUserApi.deleteActivationMessage();
-    }
 }

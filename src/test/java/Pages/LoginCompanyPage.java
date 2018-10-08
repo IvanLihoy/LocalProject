@@ -17,7 +17,7 @@ public class LoginCompanyPage extends Tools {
         PageFactory.initElements(driver,this);
     }
 
-    private String COMPANY_EMAIL = "lihoy+226@singree.com";
+    private String COMPANY_EMAIL = RegistrationCompanyPage.EMAIL_COMPANY;
     private String COMPANY_PASSWORD = "1q2w3e4r5t";
 
     @FindBy(css = "input[name='email']") WebElement emailField;
@@ -27,6 +27,7 @@ public class LoginCompanyPage extends Tools {
     @FindBy(css = "a[id = 'main-menu']") WebElement accountDropDown;
     @FindBy(css = "i[class='fa fa-sign-out']") WebElement logoutButton;
     @FindBy(css = "button[class='logIn']") WebElement signInButton;
+    @FindBy(css = "div[class = 'activate-login']") WebElement signInAfterActivation;
 
     public void openLoginPage() {
         loginPopUp("say_Friend_and_enter", "3UrC1Nks20U2kDvtIP0GVrU1jiplerU5iU4oepM5zVm3nPeY0x");
@@ -37,6 +38,7 @@ public class LoginCompanyPage extends Tools {
     }
 
     public  void loginCompany() {
+        //signInAfterActivation.click();
         emailField.sendKeys(COMPANY_EMAIL);
         passwordField.sendKeys(COMPANY_PASSWORD);
         waitForElementIsClickable(submitButton);

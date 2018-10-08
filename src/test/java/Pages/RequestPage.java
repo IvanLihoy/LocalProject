@@ -75,8 +75,9 @@ public class RequestPage extends Tools{
         date_in_calendar.click();
         scrollDown(60);
         clickJS(nextButton);
-        sleep(4);
+        sleep(2);
         clickJS(closePopupButton);
+        sleep(2);
     }
 
     public void createRequestFourthStepNoPrice() {
@@ -86,8 +87,9 @@ public class RequestPage extends Tools{
         date_in_calendar.click();
         scrollDown(60);
         clickJS(nextButton);
-        sleep(4);
+        sleep(2);
         clickJS(closePopupButton);
+        sleep(2);
     }
 }
 

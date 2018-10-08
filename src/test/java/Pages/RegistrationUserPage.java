@@ -20,7 +20,7 @@ public class RegistrationUserPage extends Tools {
     public static final String HOME_PAGE_URL="https://testing.opporty.com/";
     public static final String FIRST_NAME = "Auto";
     public static final String LAST_NAME = "Test";
-    public static final String EMAIL = "lihoy+245@singree.com";
+    public static final String EMAIL = "lihoy+256@singree.com";
     public static final String PASSWORD = "1q2w3e4r5t";
     public static final String CONFIRMATION_PASSWORD = "1q2w3e4r5t";
 

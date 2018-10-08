@@ -1,7 +1,4 @@
-import Pages.ActivationUserApi;
-import Pages.LoginUserPage;
-import Pages.RegistrationUserPage;
-import Pages.RequestPage;
+import Pages.*;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -14,6 +11,8 @@ public class TestCasesUser extends ChromeConfig {
     private RegistrationUserPage registrationUserPage;
     private ActivationUserApi activationUserApi;
     private RequestPage requestPage;
+    private SocialLoginPage socialLoginPage;
+    private ForgotPasswordPage forgotPasswordPage;
 
     @BeforeClass
     protected void initDBPages() throws IOException {
@@ -21,6 +20,8 @@ public class TestCasesUser extends ChromeConfig {
         registrationUserPage = new RegistrationUserPage(driver);
         activationUserApi = new ActivationUserApi(driver);
         requestPage = new RequestPage(driver);
+        socialLoginPage = new SocialLoginPage(driver);
+        forgotPasswordPage = new ForgotPasswordPage(driver);
     }
 
     @Test(priority = 1)
@@ -55,5 +56,29 @@ public class TestCasesUser extends ChromeConfig {
         requestPage.createRequestThirdStep();
         requestPage.createRequestFourthStepNoPrice();
         loginUserPage.verifyLogin();
+    }
+
+    @Test(priority = 6)
+    public void loginWithFacebookTest() {
+        socialLoginPage.openLoginPageFB();
+        socialLoginPage.loginUserFB();
+        socialLoginPage.verifyUserFB();
+    }
+
+    @Test(priority = 7)
+    public void loginWithLinkedInTest() {
+        socialLoginPage.openLoginPageIN();
+        socialLoginPage.loginUserIN();
+        socialLoginPage.verifyUserIN();
+    }
+
+    @Test(priority = 8)
+    public void forgotPasswordTest() throws Exception {
+        forgotPasswordPage.getForgotPassword();
+        forgotPasswordPage.enterPassword();
+        forgotPasswordPage.updatePassword();
+        forgotPasswordPage.loginWithNewPassword();
+        loginUserPage.verifyLogin();
+        forgotPasswordPage.deleteMessageResetPassword();
     }
 }
