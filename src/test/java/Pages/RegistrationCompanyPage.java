@@ -21,7 +21,7 @@ public class RegistrationCompanyPage extends Tools {
     public static final String FIRST_NAME = "Auto";
     public static final String LAST_NAME = "Test";
     public static final String COMPANY_NAME = "Clever_auto_test";
-    public static final String EMAIL_COMPANY = "lihoy+258@singree.com";
+    public static final String EMAIL_COMPANY = "lihoy+257@singree.com";
     public static final String PASSWORD = "1q2w3e4r5t";
     public static final String CONFIRMATION_PASSWORD = "1q2w3e4r5t";
 
@@ -42,7 +42,7 @@ public class RegistrationCompanyPage extends Tools {
         openPage(HOME_PAGE_URL);
         getCurrentUrl(HOME_PAGE_URL);
         signUpButton.click();
-        waitForElementIsClickable(individualButton);
+        waitForElementClickable(individualButton);
         sleep(2);
     }
 
@@ -55,7 +55,7 @@ public class RegistrationCompanyPage extends Tools {
         lastNameField.sendKeys(LAST_NAME);
         companyNameField.sendKeys(COMPANY_NAME);
         createButton.click();
-        assertVisibility(agreeRegistrationButton);
+        waitForElementDisplayed(agreeRegistrationButton);
         agreeRegistrationButton.click();
         sleep(5);
     }

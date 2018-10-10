@@ -77,33 +77,28 @@ public class Tools {
         }
     }
 
-    public  void waitForElementIsClickable(WebElement element){
-        wait = new WebDriverWait(driver, 15);
-        wait.until(elementToBeClickable(element));
+    protected void waitForElementClickable(WebElement element) {
+        new WebDriverWait(driver, 15).until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    public  void assertVisibility(WebElement element){
-        try{
-            assertTrue(element.isDisplayed());
-        } catch (Exception e){
-            e.printStackTrace();
-        }
-    }
-
-    protected void waitForElementDisplayed(By by) {
-        new WebDriverWait(driver, 15).until(ExpectedConditions.visibilityOfElementLocated(by));
-    }
-
-    protected void waitForElementDisplayedXpath(String xPath) {
-        new WebDriverWait(driver, 15).until(ExpectedConditions.presenceOfElementLocated(By.xpath(xPath)));
+    protected void waitForElementDisplayed(WebElement element) {
+        new WebDriverWait(driver, 15).until(ExpectedConditions.visibilityOf(element));
     }
 
     protected void waitForElementDisplayedCss(String cssSelector) {
-        new WebDriverWait(driver, 15).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(cssSelector)));
+        new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(cssSelector)));
     }
-    public void waitUntilVisible(WebElement element){
-        new WebDriverWait(driver, 20)
-                .until(ExpectedConditions.visibilityOf(element));
+
+    protected void waitForElementDisplayedXpath(String xPath) {
+        new WebDriverWait(driver, 15).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xPath)));
+    }
+
+    protected void waitForElementClickableLong(WebElement element, int pause) {
+        new WebDriverWait(driver, pause).until(ExpectedConditions.elementToBeClickable(element));
+    }
+
+    protected void waitForElementDisplayedLong(WebElement element, int pause) {
+        new WebDriverWait(driver, pause).until(ExpectedConditions.visibilityOf(element));
     }
 
     public void sendEnter() throws AWTException {

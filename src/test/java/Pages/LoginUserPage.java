@@ -37,25 +37,25 @@ public class LoginUserPage extends Tools {
     public void openLoginPage() {
         loginPopUp("say_Friend_and_enter", "3UrC1Nks20U2kDvtIP0GVrU1jiplerU5iU4oepM5zVm3nPeY0x");
         openPage(HOME_PAGE_URL);
-        waitUntilVisible(signInButton);
+        waitForElementDisplayed(signInButton);
         signInButton.click();
-        waitUntilVisible(emailField);
+        waitForElementDisplayed(emailField);
     }
 
     public  void loginUser() {
         signInAfterActivation.click();
         emailField.sendKeys(USER_EMAIL);
         passwordField.sendKeys(USER_PASSWORD);
-        waitForElementIsClickable(submitButton);
+        waitForElementClickable(submitButton);
         submitButton.click();
         getCurrentUrl(HOME_PAGE_URL);
     }
 
     public  void verifyLogin(){
-        waitForElementIsClickable(accountDropDown);
+        waitForElementClickable(accountDropDown);
         accountDropDown.click();
-        assertVisibility(logoutButton);
+        waitForElementDisplayed(logoutButton);
         logoutButton.click();
-        assertVisibility(signInButton);
+        waitForElementDisplayed(signInButton);
     }
 }

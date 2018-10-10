@@ -39,9 +39,9 @@ public class SocialLoginPage extends Tools {
     public void openLoginPageFB() {
         loginPopUp("say_Friend_and_enter", "3UrC1Nks20U2kDvtIP0GVrU1jiplerU5iU4oepM5zVm3nPeY0x");
         openPage(HOME_PAGE_URL);
-        waitUntilVisible(signInButton);
+        waitForElementDisplayed(signInButton);
         signInButton.click();
-        waitUntilVisible(buttonFB);
+        waitForElementDisplayed(buttonFB);
         buttonFB.click();
     }
 
@@ -53,11 +53,11 @@ public class SocialLoginPage extends Tools {
     }
 
     public void verifyUserFB() {
-        assertVisibility(homePageDropDown);
+        waitForElementDisplayed(homePageDropDown);
         homePageDropDown.click();
-        assertVisibility(logoutButton);
+        waitForElementDisplayed(logoutButton);
         logoutButton.click();
-        assertVisibility(signInButton);
+        waitForElementDisplayed(signInButton);
         assertTrue(signInButton.isDisplayed());
     }
 
@@ -75,7 +75,7 @@ public class SocialLoginPage extends Tools {
         loginPopUp("say_Friend_and_enter", "3UrC1Nks20U2kDvtIP0GVrU1jiplerU5iU4oepM5zVm3nPeY0x");
         openPage(HOME_PAGE_URL);
         signInButton.click();
-        waitForElementIsClickable(buttonIN);
+        waitForElementClickable(buttonIN);
         buttonIN.click();
     }
 
@@ -86,11 +86,11 @@ public class SocialLoginPage extends Tools {
     }
 
     public  void verifyUserIN() {
-        assertVisibility(homePageDropDown);
+        waitForElementDisplayed(homePageDropDown);
         homePageDropDown.click();
         logoutButton.isDisplayed();
         logoutButton.click();
-        assertVisibility(signInButton);
+        waitForElementDisplayed(signInButton);
         assertTrue(signInButton.isDisplayed());
     }
 }

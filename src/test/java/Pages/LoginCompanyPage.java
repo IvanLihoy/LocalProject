@@ -32,24 +32,24 @@ public class LoginCompanyPage extends Tools {
     public void openLoginPage() {
         loginPopUp("say_Friend_and_enter", "3UrC1Nks20U2kDvtIP0GVrU1jiplerU5iU4oepM5zVm3nPeY0x");
         openPage(HOME_PAGE_URL);
-        waitUntilVisible(signInButton);
+        waitForElementDisplayed(signInButton);
         signInButton.click();
-        waitUntilVisible(emailField);
+        waitForElementDisplayed(emailField);
     }
 
     public  void loginCompany() {
         //signInAfterActivation.click();
         emailField.sendKeys(COMPANY_EMAIL);
         passwordField.sendKeys(COMPANY_PASSWORD);
-        waitForElementIsClickable(submitButton);
+        waitForElementClickable(submitButton);
         submitButton.click();
     }
 
     public  void verifyLogin(){
-        waitForElementIsClickable(accountDropDown);
+        waitForElementClickable(accountDropDown);
         accountDropDown.click();
-        assertVisibility(logoutButton);
+        waitForElementDisplayed(logoutButton);
         logoutButton.click();
-        assertVisibility(signInButton);
+        waitForElementDisplayed(signInButton);
     }
 }

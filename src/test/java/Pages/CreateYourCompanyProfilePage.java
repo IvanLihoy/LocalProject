@@ -22,14 +22,14 @@ public class CreateYourCompanyProfilePage extends Tools {
     private String WEBSITE = "https://gogo.com";
     private String ZIPCODE = "98001";
     private String CITY ="Odessa TX";
-    private String PATH_TO_LOGO_FILE = "bin\\imageLogo.jpg";
+    private String PATH_TO_LOGO_FILE = "bin\\image.jpg";
     private String PHONE_NUMBER = "1234567890";
     private String DESCRIPTION = "test company description";
 
     /*Step 1*/
     @FindBy(xpath = "//span[contains(text(), 'Welcome to Opporty!')]") WebElement headerOfPageGreeting;
     @FindBy(xpath = "//span[contains(text(), 'Create your company profile')]") WebElement headerOfPageStep1;
-    @FindBy(xpath = "//span[contains(text(), 'Get started']") WebElement getStartedButton;
+    @FindBy(xpath = "//button[contains(text(), 'Get started')]") WebElement getStartedButton;
     @FindBy(css = "input[placeholder = 'Enter your company street address']") WebElement companyAddressField;
     @FindBy(css = "input[placeholder = 'Enter your company website']") WebElement websiteField;
     @FindBy(css = "input[placeholder = 'Enter ZIP']") WebElement zipField;
@@ -60,9 +60,10 @@ public class CreateYourCompanyProfilePage extends Tools {
 
     public void fillInCompanyProfile() {
 //        openPage(HOME_PAGE_URL);
-//        waitUntilVisible(headerOfPageGreeting);
+        //sleep(2);
+        waitForElementDisplayed(getStartedButton);
         getStartedButton.click();
-        waitUntilVisible(headerOfPageStep1);
+        waitForElementDisplayed(headerOfPageStep1);
         companyAddressField.sendKeys(COMPANY_ADDRESS);
         websiteField.sendKeys(WEBSITE);
         zipField.sendKeys(ZIPCODE);
@@ -70,8 +71,9 @@ public class CreateYourCompanyProfilePage extends Tools {
         addFileInput.sendKeys(getAbsolutePath(PATH_TO_LOGO_FILE));
         sleep(2);
         clickJS(cropButton);
+        sleep(2);
         clickJS(saveButton);
-        waitUntilVisible(telephoneNumberField);
+        waitForElementDisplayed(telephoneNumberField);
         telephoneNumberField.sendKeys(PHONE_NUMBER);
         clickJS(nextButton);
         addCategoryLowServices.click();
@@ -83,5 +85,4 @@ public class CreateYourCompanyProfilePage extends Tools {
         Assert.assertTrue(skipTourLink.isDisplayed());
         skipTourLink.click();
     }
-
 }

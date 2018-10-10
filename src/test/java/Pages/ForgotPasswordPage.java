@@ -37,12 +37,12 @@ public class ForgotPasswordPage extends Tools {
     public void getForgotPassword () throws Exception{
         loginPopUp("say_Friend_and_enter", "3UrC1Nks20U2kDvtIP0GVrU1jiplerU5iU4oepM5zVm3nPeY0x");
         openPage(HOME_PAGE_URL);
-        waitForElementIsClickable(signInButton);
+        waitForElementClickable(signInButton);
         signInButton.click();
-        waitForElementIsClickable(forgotPassButton);
-        assertVisibility(forgotPassButton);
+        waitForElementClickable(forgotPassButton);
+        waitForElementDisplayed(forgotPassButton);
         forgotPassButton.click();
-        assertVisibility(emailField);
+        waitForElementDisplayed(emailField);
         emailField.sendKeys(USER_EMAIL);
         emailMeButton.click();
         //waitUntilVisible(okButton);

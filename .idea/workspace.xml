@@ -2,19 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c68acdbd-095d-414e-b1be-2848d94888f0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/CreateYourCompanyProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/ForgotPasswordApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/ForgotPasswordPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/SocialLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/TestNG.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ChromeConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ChromeConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/ActivationUserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/ActivationUserApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/OfferPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/ServicePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Report/APIClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Report/APIException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Report/TestRail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestRailConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CreateYourCompanyProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CreateYourCompanyProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/ForgotPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/ForgotPasswordPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/LoginCompanyPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginCompanyPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/LoginUserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginUserPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/RegistrationCompanyPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/RegistrationCompanyPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/RegistrationUserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/RegistrationUserPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/RequestPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/RequestPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/SocialLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/SocialLoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestCasesCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCasesCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestCasesUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCasesUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/Tools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/CreateYourCompanyProfilePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/CreateYourCompanyProfilePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/ForgotPasswordPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/ForgotPasswordPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/LoginCompanyPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/LoginCompanyPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/LoginUserPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/LoginUserPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/RegistrationCompanyPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/RegistrationCompanyPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/RegistrationUserPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/RegistrationUserPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/RequestPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/RequestPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/SocialLoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/SocialLoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCasesCompany.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCasesCompany.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/Tools.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utils/Tools.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,11 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ActivationUserApi.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ActivationUserApi.java">
+      <file leaf-file-name="OfferPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/OfferPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-96">
-              <caret line="63" column="24" lean-forward="true" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+            <state relative-caret-position="1360">
+              <caret line="80" column="63" selection-start-line="80" selection-start-column="63" selection-end-line="80" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,61 +54,67 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistrationCompanyPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/RegistrationCompanyPage.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+            <state relative-caret-position="323">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="APIClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Report/APIClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#1092#1093#0" expanded="true" />
+                <element signature="e#1126#1127#0" expanded="true" />
+                <element signature="e#1170#1171#0" expanded="true" />
+                <element signature="e#1204#1205#0" expanded="true" />
+                <element signature="e#1365#1366#0" expanded="true" />
+                <element signature="e#1403#1404#0" expanded="true" />
+                <element signature="e#1455#1456#0" expanded="true" />
+                <element signature="e#1497#1498#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChromeConfig.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ChromeConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ChromeConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="24" column="72" lean-forward="true" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
+            <state relative-caret-position="340">
+              <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1000#1001#0" expanded="true" />
-                <element signature="e#1029#1030#0" expanded="true" />
+                <element signature="e#1073#1074#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginUserPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/LoginUserPage.java">
+      <file leaf-file-name="APIException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Report/APIException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" column="59" lean-forward="true" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+            <state relative-caret-position="340">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistrationUserPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/RegistrationUserPage.java">
+      <file leaf-file-name="TestRail.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Report/TestRail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="36" column="91" lean-forward="true" selection-start-line="36" selection-start-column="91" selection-end-line="36" selection-end-column="91" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginCompanyPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/LoginCompanyPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+            <state relative-caret-position="-312">
+              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,11 +122,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateYourCompanyProfilePage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/CreateYourCompanyProfilePage.java">
+      <file leaf-file-name="TestRailConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestRailConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-133">
-              <caret line="34" column="74" lean-forward="true" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
+            <state relative-caret-position="119">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServicePage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ServicePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1037">
+              <caret line="61" column="50" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,20 +150,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resource/TestNG.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestCasesUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestCasesUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1466#1467#0" expanded="true" />
-              </folding>
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -138,12 +158,10 @@
       <file leaf-file-name="TestCasesCompany.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestCasesCompany.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="60" column="39" lean-forward="true" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+            <state relative-caret-position="1360">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1605#1606#0" expanded="true" />
-                <element signature="e#1648#1649#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,22 +183,30 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/resourse/TestNG.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Utils/Tools.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/RequestPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/SocialLoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/ForgotPasswordApi.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/LoginUserPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/ForgotPasswordPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestCasesUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/ActivationUserApi.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/RegistrationUserPage.java" />
         <option value="$PROJECT_DIR$/src/main/resource/TestNG.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/RegistrationCompanyPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ChromeConfig.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestCasesCompany.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/LoginCompanyPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Utils/Tools.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/CreateYourCompanyProfilePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/ForgotPasswordPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/LoginCompanyPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/LoginUserPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/RegistrationCompanyPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/RegistrationUserPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/RequestPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/SocialLoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/OfferPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/ServicePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestCasesCompany.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Report/Retry.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Report/RetryListener.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Report/APIClient.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Report/APIException.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Report/TestRail.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestRailConfig.java" />
       </list>
     </option>
   </component>
@@ -191,7 +217,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -253,7 +279,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -378,34 +404,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.08 at 13h 16m 36s.xml">
+    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.10 at 12h 57m 58s.xml">
       <configuration name="C:/Users/Ivan/IdeaProjects/LocalProject/src/main/resource/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.08 at 13h 21m 42s.xml">
+    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.10 at 13h 01m 59s.xml">
       <configuration name="C:/Users/Ivan/IdeaProjects/LocalProject/src/main/resource/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.08 at 17h 00m 55s.xml">
+    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.10 at 13h 04m 30s.xml">
       <configuration name="C:/Users/Ivan/IdeaProjects/LocalProject/src/main/resource/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.08 at 17h 18m 42s.xml">
+    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.10 at 13h 06m 02s.xml">
       <configuration name="C:/Users/Ivan/IdeaProjects/LocalProject/src/main/resource/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.08 at 17h 24m 52s.xml">
+    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.10 at 13h 10m 17s.xml">
       <configuration name="C:/Users/Ivan/IdeaProjects/LocalProject/src/main/resource/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.08 at 17h 36m 55s.xml">
+    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.10 at 13h 20m 06s.xml">
       <configuration name="C:/Users/Ivan/IdeaProjects/LocalProject/src/main/resource/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.08 at 17h 42m 04s.xml">
+    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.10 at 13h 21m 29s.xml">
       <configuration name="C:/Users/Ivan/IdeaProjects/LocalProject/src/main/resource/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.08 at 17h 43m 37s.xml">
+    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.10 at 13h 25m 53s.xml">
       <configuration name="C:/Users/Ivan/IdeaProjects/LocalProject/src/main/resource/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.08 at 17h 50m 21s.xml">
+    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.10 at 13h 26m 48s.xml">
       <configuration name="C:/Users/Ivan/IdeaProjects/LocalProject/src/main/resource/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.08 at 17h 52m 14s.xml">
+    <history-entry file="C__Users_Ivan_IdeaProjects_LocalProject_src_main_resource_TestNG_xml - 2018.10.10 at 13h 46m 35s.xml">
       <configuration name="C:/Users/Ivan/IdeaProjects/LocalProject/src/main/resource/TestNG.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -431,11 +457,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32897604" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4814815" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45424837" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.33877996" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17590618" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17590618" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -538,8 +564,6 @@
           <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#1648#1649#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -555,53 +579,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestSuites.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/SocialLoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ForgotPasswordApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/RequestPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-995">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ForgotPasswordPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestCasesUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
@@ -613,9 +590,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Utils/Tools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="83" column="64" lean-forward="true" selection-start-line="83" selection-start-column="64" selection-end-line="83" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ActivationUserApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
+        <state relative-caret-position="17">
           <caret line="63" column="24" lean-forward="true" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -623,20 +610,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/RegistrationUserPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ForgotPasswordApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="36" column="91" lean-forward="true" selection-start-line="36" selection-start-column="91" selection-end-line="36" selection-end-column="91" />
+        <state relative-caret-position="-714">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Utils/Tools.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ForgotPasswordPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        <state relative-caret-position="657">
+          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -645,8 +632,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/LoginUserPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="59" lean-forward="true" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+        <state relative-caret-position="317">
+          <caret line="41" column="44" lean-forward="true" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/RegistrationUserPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/RegistrationCompanyPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/CreateYourCompanyProfilePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/RequestPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="46" selection-start-line="14" selection-start-column="8" selection-end-line="16" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/SocialLoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/LoginCompanyPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/OfferPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="63" selection-start-line="80" selection-start-column="63" selection-end-line="80" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ServicePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="50" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -656,26 +720,43 @@
     <entry file="file://$PROJECT_DIR$/src/main/resource/TestNG.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ChromeConfig.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="24" column="72" lean-forward="true" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
+        <state relative-caret-position="323">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Report/APIException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/RegistrationCompanyPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Report/TestRail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        <state relative-caret-position="-312">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestRailConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -684,32 +765,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestCasesCompany.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="60" column="39" lean-forward="true" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#1648#1649#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/LoginCompanyPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        <state relative-caret-position="1360">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/CreateYourCompanyProfilePage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Report/APIClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="34" column="74" lean-forward="true" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
+        <state relative-caret-position="289">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1092#1093#0" expanded="true" />
+            <element signature="e#1126#1127#0" expanded="true" />
+            <element signature="e#1170#1171#0" expanded="true" />
+            <element signature="e#1204#1205#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1403#1404#0" expanded="true" />
+            <element signature="e#1455#1456#0" expanded="true" />
+            <element signature="e#1497#1498#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ChromeConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1073#1074#0" expanded="true" />
           </folding>
         </state>
       </provider>

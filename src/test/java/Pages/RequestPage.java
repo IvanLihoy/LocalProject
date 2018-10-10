@@ -43,22 +43,22 @@ public class RequestPage extends Tools{
     @FindBy(xpath = "//span[contains(text(), 'Business Catalog')]") WebElement businessCatalogLink;
 
     public void createRequestFirstStep() {
-        waitForElementIsClickable(requestButton);
+        waitForElementClickable(requestButton);
         requestButton.click();
-        assertVisibility(addCategoryLowServices);
+        waitForElementDisplayed(addCategoryLowServices);
         addCategoryLowServices.click();
         addCategoryCheckbox.click();
         clickJS(nextButton);
     }
 
     public void createRequestSecondStep() {
-        waitForElementIsClickable(additionalCategoryCheckbox);
+        waitForElementClickable(additionalCategoryCheckbox);
         additionalCategoryCheckbox.click();
         clickJS(nextButton);
     }
 
     public void createRequestThirdStep() {
-        waitForElementIsClickable(addRequestNameField);
+        waitForElementClickable(addRequestNameField);
         addRequestNameField.sendKeys(REQUEST_NAME);
         addRequestDescriptionField.sendKeys(REQUEST_DESCRIPTION);
         sleep(2);

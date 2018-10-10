@@ -2,6 +2,7 @@ import Pages.*;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.awt.*;
 import java.io.IOException;
 
 public class TestCasesCompany extends ChromeConfig {
@@ -11,6 +12,8 @@ public class TestCasesCompany extends ChromeConfig {
     private ActivationUserApi activationUserApi;
     private CreateYourCompanyProfilePage createYourCompanyProfilePage;
     private RequestPage requestPage;
+    private OfferPage offerPage;
+    private ServicePage servicePage;
 
     @BeforeClass
     protected void initDBPages() throws IOException {
@@ -19,6 +22,8 @@ public class TestCasesCompany extends ChromeConfig {
         activationUserApi = new ActivationUserApi(driver);
         createYourCompanyProfilePage = new CreateYourCompanyProfilePage(driver);
         requestPage = new RequestPage(driver);
+        offerPage = new OfferPage(driver);
+        servicePage = new ServicePage(driver);
     }
 
 //    @Test(priority = 1)
@@ -39,26 +44,39 @@ public class TestCasesCompany extends ChromeConfig {
         loginCompanyPage.loginCompany();
     }
 
-    @Test(priority = 2)//, dependsOnMethods = "activateCompanyTest")
-    public void fillInCompanyProfileTest() {
-        createYourCompanyProfilePage.fillInCompanyProfile();
-    }
+//    @Test(priority = 2)//, dependsOnMethods = "activateCompanyTest")
+//    public void fillInCompanyProfileTest() {
+//        createYourCompanyProfilePage.fillInCompanyProfile();
+//    }
 
-    @Test(priority = 3)
-    public void createRequestByCompanyWithPriceTest() {
-        requestPage.createRequestFirstStep();
-        requestPage.createRequestSecondStep();
-        requestPage.createRequestThirdStep();
-        requestPage.createRequestFourthStepWithPrice();
-    }
+//    @Test(priority = 3)
+//    public void createRequestByCompanyWithPriceTest() {
+//        requestPage.createRequestFirstStep();
+//        requestPage.createRequestSecondStep();
+//        requestPage.createRequestThirdStep();
+//        requestPage.createRequestFourthStepWithPrice();
+//    }
+//
+//    @Test(priority = 4)
+//    public void createRequestByCompanyNoPriceTest() {
+//        requestPage.createRequestFirstStep();
+//        requestPage.createRequestSecondStep();
+//        requestPage.createRequestThirdStep();
+//        requestPage.createRequestFourthStepNoPrice();
+//        loginCompanyPage.verifyLogin();
+//    }
 
-    @Test(priority = 4)
-    public void createRequestByCompanyNoPriceTest() {
-        requestPage.createRequestFirstStep();
-        requestPage.createRequestSecondStep();
-        requestPage.createRequestThirdStep();
-        requestPage.createRequestFourthStepNoPrice();
-        loginCompanyPage.verifyLogin();
+//    @Test(priority = 2)
+//    public void createOfferASAPTest() throws AWTException {
+//        offerPage.addOfferFirstStep();
+//        offerPage.addOfferSecondStep();
+//        offerPage.addOfferThirdStep();
+//        offerPage.addOfferFourthStep();
+//    }
+
+    @Test(priority = 2)
+    public void addNewServiceTest() throws AWTException{
+        servicePage.addService();
     }
 
 }

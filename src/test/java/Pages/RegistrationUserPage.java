@@ -41,7 +41,7 @@ public class RegistrationUserPage extends Tools {
         openPage(HOME_PAGE_URL);
         getCurrentUrl(HOME_PAGE_URL);
         signUpButton.click();
-        waitForElementIsClickable(individualButton);
+        waitForElementClickable(individualButton);
         sleep(2);
     }
 
@@ -54,7 +54,7 @@ public class RegistrationUserPage extends Tools {
         lastNameField.sendKeys(LAST_NAME);
         createButton.click();
         sleep(2);
-        assertVisibility(agreeRegistrationButton);
+        waitForElementDisplayed(agreeRegistrationButton);
         agreeRegistrationButton.click();
         sleep(10);
     }
