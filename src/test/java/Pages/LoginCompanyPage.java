@@ -38,7 +38,7 @@ public class LoginCompanyPage extends Tools {
     }
 
     public  void loginCompany() {
-        //signInAfterActivation.click();
+        signInAfterActivation.click();
         emailField.sendKeys(COMPANY_EMAIL);
         passwordField.sendKeys(COMPANY_PASSWORD);
         waitForElementClickable(submitButton);

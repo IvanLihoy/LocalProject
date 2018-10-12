@@ -21,7 +21,7 @@ public class RegistrationCompanyPage extends Tools {
     public static final String FIRST_NAME = "Auto";
     public static final String LAST_NAME = "Test";
     public static final String COMPANY_NAME = "Clever_auto_test";
-    public static final String EMAIL_COMPANY = "lihoy+257@singree.com";
+    public static final String EMAIL_COMPANY = "lihoy+292@singree.com";
     public static final String PASSWORD = "1q2w3e4r5t";
     public static final String CONFIRMATION_PASSWORD = "1q2w3e4r5t";
 

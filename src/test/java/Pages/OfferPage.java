@@ -36,7 +36,7 @@ public class OfferPage extends Tools {
     @FindBy(xpath = "//span[contains(text(), 'imageLogo.jpg')]") WebElement fileToload;
     @FindBy(xpath = "(//input[@role = 'combobox'])[1]") WebElement stateField;
     @FindBy(xpath = "//div[contains(text() , 'Your city')]") WebElement cityField;
-    @FindBy(css = "div[id = 'react-select-3--list']") WebElement selectCity;
+    @FindBy(css = "div[class = 'Select-menu-outer']") WebElement selectCity;
 
     @FindBy(css = "input[id = 'budget']") WebElement budgetField;
     @FindBy(xpath = "//*[@id=\"date\"]/div/input") WebElement dateField;

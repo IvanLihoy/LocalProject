@@ -1,14 +1,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Main" verbose="1" >
-    <!--<test name="Individual_user_suite" >-->
-        <!--<classes>-->
-            <!--<class name="TestCasesUser" />-->
-        <!--</classes>-->
-    <!--</test>-->
-    <test name="Company_suite" >
+<suite name="Main" verbose="2" >
+    <test name="Individual_user_suite" >
         <classes>
-            <class name="TestCasesCompany" />
+            <class name="TestCasesUser" />
         </classes>
     </test>
+    <!--<test name="Company_suite" >-->
+        <!--<classes>-->
+            <!--<class name="TestCasesCompany" />-->
+        <!--</classes>-->
+    <!--</test>-->
 </suite>
